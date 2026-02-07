@@ -54,7 +54,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     data = query.data
 
-    # CATEGORY
+
     if data.startswith("cat:"):
         cat_key = data.split(":")[1]
         category = menu[cat_key]
@@ -72,7 +72,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
 
-    # ITEM
+    
     elif data.startswith("item:"):
         _, cat_key, item_key = data.split(":")
         item = menu[cat_key]["items"][item_key]
@@ -86,7 +86,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             reply_markup=quantity_buttons(cat_key, item_key)
         )
 
-    # QUANTITY
+   
     elif data.startswith("qty:"):
         _, cat_key, item_key, qty = data.split(":")
         qty = int(qty)
@@ -106,7 +106,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             ])
         )
 
-    # BACK
+  
     elif data == "back":
         await query.edit_message_text(
             text="☕ Coffee House\nԸնտրիր category 👇",
