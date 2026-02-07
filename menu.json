@@ -1,0 +1,33 @@
+{
+  "coffee": {
+    "title": "☕ Coffee",
+    "items": {
+      "espresso": {
+        "name": "Espresso",
+        "price": 800
+      },
+      "latte": {
+        "name": "Latte",
+        "price": 1200
+      },
+      "cappuccino": {
+        "name": "Cappuccino",
+        "price": 1100
+      }
+    }
+  },
+  "tea": {
+    "title": "🍵 Tea",
+    "items": {
+      "green_tea": {
+        "name": "Green Tea",
+        "price": 600
+      },
+      "black_tea": {
+        "name": "Black Tea",
+        "price": 500
+      }
+    }
+  }
+}
+
